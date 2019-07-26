@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class TouchController : MonoBehaviour
 {
+    public LayerMask InteractableMask;
+
     private void Update()
     {
         if (Input.GetKeyDown(KeyCode.Mouse0))
@@ -11,7 +13,10 @@ public class TouchController : MonoBehaviour
             RaycastHit hit;
             Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
 
-            //if (Physics.Raycast(ray, out hit, ))
+            if (Physics.Raycast(ray, out hit, 100f, InteractableMask))
+            {
+                PlayerController.Instance.Move(hit.transform.position);
+            }
         }
     }
 }
