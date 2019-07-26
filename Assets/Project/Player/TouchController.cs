@@ -15,7 +15,12 @@ public class TouchController : MonoBehaviour
 
             if (Physics.Raycast(ray, out hit, 100f, InteractableMask))
             {
-                PlayerController.Instance.Move(hit.transform.position);
+                Walkable target = hit.transform.GetComponent<Walkable>();
+
+                if (target != null)
+                {
+                    PlayerController.Instance.Move(target.GetDestination());
+                }
             }
         }
     }
