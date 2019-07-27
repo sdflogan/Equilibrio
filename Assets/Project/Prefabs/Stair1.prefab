@@ -9,6 +9,8 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2630210834661532383}
+  - component: {fileID: 1442233181724708053}
+  - component: {fileID: 5803766052954625170}
   m_Layer: 8
   m_Name: WalkPosition
   m_TagString: Untagged
@@ -30,6 +32,33 @@ Transform:
   m_Father: {fileID: 8001912673910523394}
   m_RootOrder: 1
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!65 &1442233181724708053
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737869766179623776}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}
+--- !u!114 &5803766052954625170
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1737869766179623776}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ac0b33cec1a2d784793aff4ec0e87b8d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  TargetPositions:
+  - {fileID: 2630210834661532383}
 --- !u!1 &5807701450059978770
 GameObject:
   m_ObjectHideFlags: 0
@@ -118,8 +147,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8001912673910523394}
-  - component: {fileID: 4187064423445401898}
-  - component: {fileID: 1903072708705302172}
   m_Layer: 8
   m_Name: Stair1
   m_TagString: Untagged
@@ -143,30 +170,3 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &4187064423445401898
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6437852746572166161}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: ac0b33cec1a2d784793aff4ec0e87b8d, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  TargetPositions:
-  - {fileID: 2630210834661532383}
---- !u!65 &1903072708705302172
-BoxCollider:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 6437852746572166161}
-  m_Material: {fileID: 0}
-  m_IsTrigger: 0
-  m_Enabled: 1
-  serializedVersion: 2
-  m_Size: {x: 1, y: 1, z: 1}
-  m_Center: {x: 0, y: 0, z: 0}
