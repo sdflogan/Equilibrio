@@ -9,11 +9,19 @@ public class SceneLoader : Singleton<SceneLoader>
 {
     public Image LoadImage;
     public float TransitionTime = 1f;
+    public bool DoStart = true;
 
     private void Start()
     {
-        //LoadImage.DOFade(1f, TransitionTime).OnComplete(() => LoadScene(0)).Play();
-        LoadScene(0);
+        if (DoStart)
+        {
+            LoadScene(0);
+        }
+        else
+        {
+            DualRenderCamera.Instance.SetReferences();
+            LoadImage.DOFade(0f, TransitionTime).Play();
+        }
     }
 
     public void LoadSceneFade(int scene)

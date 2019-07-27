@@ -7,8 +7,8 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: 1 - Alpha
-  m_Shader: {fileID: 4800000, guid: 118442d7885ab244ebb738523704f05e, type: 3}
+  m_Name: Target
+  m_Shader: {fileID: 10755, guid: 0000000000000000f000000000000000, type: 0}
   m_ShaderKeywords: 
   m_LightmapFlags: 4
   m_EnableInstancingVariants: 0
@@ -73,7 +73,5 @@ Material:
     - _UVSec: 0
     - _ZWrite: 1
     m_Colors:
-    - _BottomColor: {r: 1, g: 1, b: 1, a: 1}
-    - _Color: {r: 0.8705883, g: 0.7686275, b: 0.35667685, a: 0}
+    - _Color: {r: 0.41568628, g: 0.69411767, b: 0.5294118, a: 0}
     - _EmissionColor: {r: 0, g: 0, b: 0, a: 1}
-    - _TopColor: {r: 1, g: 1, b: 1, a: 1}

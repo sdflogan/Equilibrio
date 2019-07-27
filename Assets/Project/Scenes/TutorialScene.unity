@@ -212,6 +212,86 @@ Transform:
   m_Father: {fileID: 0}
   m_RootOrder: 6
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!4 &57267922 stripped
+Transform:
+  m_CorrespondingSourceObject: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+    type: 3}
+  m_PrefabInstance: {fileID: 64553855}
+  m_PrefabAsset: {fileID: 0}
+--- !u!1001 &64553855
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    m_TransformParent: {fileID: 3466945737886472779}
+    m_Modifications:
+    - target: {fileID: -927199367670048503, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_Name
+      value: Target
+      objectReference: {fileID: 0}
+    - target: {fileID: -8362345669012593720, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: c666f52735b85f047a315e408f1e6a4d, type: 2}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 3.01
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalPosition.z
+      value: -10
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_RootOrder
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: -4216859302048453862, guid: b620fa38f6fc7634c8e4cf275f8b0961,
+        type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: b620fa38f6fc7634c8e4cf275f8b0961, type: 3}
 --- !u!1 &230907417
 GameObject:
   m_ObjectHideFlags: 0
@@ -724,6 +804,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadImage: {fileID: 0}
   TransitionTime: 1
+  DoStart: 0
 --- !u!1 &889963774
 GameObject:
   m_ObjectHideFlags: 0
@@ -2355,11 +2436,11 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1752643495}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 4, y: 3.451, z: -10}
+  m_LocalPosition: {x: 4, y: 3.451, z: -10.277}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 3466945737886472779}
-  m_RootOrder: 10
+  m_RootOrder: 11
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!114 &1752643497
 MonoBehaviour:
@@ -3368,7 +3449,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 16f7a92d6cfd85b49b6037152724d17d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  ActionRange: {x: 0.4, y: 0.6}
+  ActionRange: {x: 0.45, y: 0.55}
   TargetMeshRenderer: {fileID: 5658214238576118725}
   Obstacle: {fileID: 1333054687}
   FadeTime: 0.25
@@ -3411,6 +3492,7 @@ Transform:
   - {fileID: 1735810107}
   - {fileID: 1581026954}
   - {fileID: 2126539614}
+  - {fileID: 57267922}
   - {fileID: 1752643496}
   m_Father: {fileID: 2114980075}
   m_RootOrder: 0

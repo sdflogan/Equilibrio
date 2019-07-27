@@ -308,7 +308,7 @@ NavMeshAgent:
   m_Speed: 1
   m_Acceleration: 8
   avoidancePriority: 50
-  m_AngularSpeed: 120
+  m_AngularSpeed: 300
   m_StoppingDistance: 0
   m_AutoTraverseOffMeshLink: 1
   m_AutoBraking: 1
@@ -766,11 +766,11 @@ SkinnedMeshRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: -7730079208461156751, guid: ed0907d4635180540b250997ccc149da, type: 3}
-  - {fileID: 6151071871934886045, guid: ed0907d4635180540b250997ccc149da, type: 3}
-  - {fileID: 2079939459439163040, guid: ed0907d4635180540b250997ccc149da, type: 3}
-  - {fileID: 3976096569710541309, guid: ed0907d4635180540b250997ccc149da, type: 3}
-  - {fileID: -8612975695535684231, guid: ed0907d4635180540b250997ccc149da, type: 3}
+  - {fileID: 2100000, guid: b6e713457a6e47b4c8d63cb2f7329740, type: 2}
+  - {fileID: 2100000, guid: 9507befb6709ff64d93bc54384f7b14d, type: 2}
+  - {fileID: 2100000, guid: 2ef7c51f609a9f8498853d7f82b490f2, type: 2}
+  - {fileID: 2100000, guid: a87399cd1b5c28d4aa24d1c8359d5e10, type: 2}
+  - {fileID: 2100000, guid: b6e713457a6e47b4c8d63cb2f7329740, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -942,7 +942,7 @@ Animator:
   m_GameObject: {fileID: 4936186387149930765}
   m_Enabled: 1
   m_Avatar: {fileID: 9000000, guid: ed0907d4635180540b250997ccc149da, type: 3}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 9dc17cd275f15c5469b8043c5141f365, type: 2}
   m_CullingMode: 1
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
