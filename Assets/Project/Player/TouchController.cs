@@ -19,7 +19,7 @@ public class TouchController : MonoBehaviour
 
                 if (target != null)
                 {
-                    PlayerController.Instance.Move(target.GetDestination(hit.point));
+                    PlayerController.Instance.Move(target, hit.point);
                 }
             }
         }

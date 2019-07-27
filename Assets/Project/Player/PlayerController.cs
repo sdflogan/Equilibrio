@@ -6,21 +6,32 @@ using UnityEngine.AI;
 public class PlayerController : Singleton<PlayerController>
 {
     private NavMeshAgent m_Agent;
+    private Walkable m_WalkableTarget;
 
     private void Awake()
     {
         m_Agent = GetComponentInChildren<NavMeshAgent>();
     }
 
-    // Update is called once per frame
-    void Update()
+    public void Move(Walkable dest, Vector3 hitPoint)
     {
-        
+        m_Agent.SetDestination(dest.GetDestination(hitPoint));
+        m_WalkableTarget = dest;
     }
 
-    public void Move(Vector3 dest)
+    public void Move(Vector3 pos)
     {
-        m_Agent.SetDestination(dest);
+        m_Agent.SetDestination(pos);
+    }
+
+    public Vector3 GetDestination()
+    {
+        return m_Agent.destination;
+    }
+
+    public Walkable GetTarget()
+    {
+        return m_WalkableTarget;
     }
 
     public void Teleport(Vector3 position)
