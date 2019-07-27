@@ -1524,7 +1524,7 @@ PrefabInstance:
     - target: {fileID: 2084715688035964947, guid: 63572182df383e542afb0343cb0cf6bc,
         type: 3}
       propertyPath: m_RootOrder
-      value: 13
+      value: 12
       objectReference: {fileID: 0}
     - target: {fileID: 2084715688035964947, guid: 63572182df383e542afb0343cb0cf6bc,
         type: 3}
@@ -2067,7 +2067,7 @@ GameObject:
   - component: {fileID: 1315056734}
   m_Layer: 0
   m_Name: PlayerRenderer
-  m_TagString: Untagged
+  m_TagString: Player
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -2271,7 +2271,7 @@ PrefabInstance:
     - target: {fileID: 4017728503336540260, guid: 1036fcecd510eba4fabd8a9d18a57c0b,
         type: 3}
       propertyPath: m_RootOrder
-      value: 14
+      value: 13
       objectReference: {fileID: 0}
     - target: {fileID: 4017728503336540260, guid: 1036fcecd510eba4fabd8a9d18a57c0b,
         type: 3}

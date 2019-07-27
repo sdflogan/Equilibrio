@@ -10,7 +10,6 @@ public class Teleport : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            Debug.Log("teleportando!");
             PlayerController.Instance.Teleport(To.GetDestination(To.transform.position));
         }
     }
