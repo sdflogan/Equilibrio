@@ -1,14 +1,34 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering.PostProcessing;
 
-public class DualRenderCamera : MonoBehaviour
+public class DualRenderCamera : Singleton<DualRenderCamera>
 {
-    public Camera main;
-    public Camera secondary;
+    public Camera MainCamera;
+    public Camera SecondCamera;
+
+    PostProcessVolume mainVolume;
+    PostProcessVolume secondVolume;
+
+    ColorGrading mainGrading;
 
     private void Awake()
     {
-        secondary.gameObject.SetActive(true);
+        SecondCamera.gameObject.SetActive(true);
+        mainVolume = MainCamera.GetComponent<PostProcessVolume>();
+        secondVolume = SecondCamera.GetComponent<PostProcessVolume>();
+
+        mainVolume.profile.TryGetSettings(out mainGrading);
+    }
+
+    public void SetMainSaturation(float saturation)
+    {
+        mainGrading.saturation.value = saturation;
+    }
+
+    public float GetMainSaturation()
+    {
+        return mainGrading.saturation.value;
     }
 }
