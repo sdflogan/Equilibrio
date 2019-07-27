@@ -21,16 +21,13 @@ public class SliderEventController : Singleton<SliderEventController>
 
     void Update()
     {
-        if (enabled)
+        if (Input.GetKey(KeyCode.Space))
         {
-            if (Input.GetKey(KeyCode.Space))
-            {
-                Increment = true;
-            }
-            else 
-            {
-                Increment = false;
-            }
+            Increment = true;
+        }
+        else 
+        {
+            Increment = false;
         }
     }
 
@@ -59,7 +56,12 @@ public class SliderEventController : Singleton<SliderEventController>
     IEnumerator UpdateSlider(float seconds)
     {
         yield return new WaitForSeconds(seconds);
-        Slider();
+
+        if (Enabled)
+        {
+            Slider();
+        }
+
         StartCoroutine(UpdateSlider(seconds));
     }
 }
