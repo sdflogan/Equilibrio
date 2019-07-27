@@ -9,28 +9,29 @@ public class SaturationEvent : SliderEvent
     public float minValue = -100f;
     public float maxValue = 100f;
 
-    protected override void DoAction(float value)
+    protected override void DoActionInsideRange(float value)
     {
-        base.DoAction(value);
+        base.DoActionInsideRange(value);
         float normalizedSaturation = (200 * value) - 100;
         DualRenderCamera.Instance.SetMainSaturation(normalizedSaturation);
     }
 
-    protected override void DoReverseAction(float value)
+    protected override void DoActionOutsideRange(float value)
     {
-        base.DoReverseAction(value);
+        base.DoActionOutsideRange(value);
         float normalizedSaturation = (200 * value) - 100;
         DualRenderCamera.Instance.SetMainSaturation(normalizedSaturation);
     }
 
-    /*
-     * OldRange = (OldMax - OldMin)
-if (OldRange == 0)
-    NewValue = NewMin
-else
-{
-    NewRange = (NewMax - NewMin)  
-    NewValue = (((OldValue - OldMin) * NewRange) / OldRange) + NewMin
-}
-     * */
+    public override void TryDoAction(float value)
+    {
+        if (base.CheckRange(value))
+        {
+            DoActionInsideRange(value);
+        }
+        else
+        {
+            DoActionOutsideRange(value);
+        }
+    }
 }

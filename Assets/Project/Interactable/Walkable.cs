@@ -33,14 +33,15 @@ public class Walkable : MonoBehaviour
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
+        Gizmos.color = Color.red;
+        /*
+        if(TargetPositions.Count > 1)
+            for (int i = 1; i <= TargetPositions.Count; i++)
+                Gizmos.DrawLine(TargetPositions[i - 1].position, TargetPositions[i].position); //Regalito.
+                */
         if (TargetPositions != null)
-        {
-            foreach (Transform t in TargetPositions)
-            {
-                Gizmos.color = Color.red;
+            foreach (Transform t in TargetPositions)               
                 Gizmos.DrawSphere(t.position, 0.1f);
-            }
-        }
     }
 #endif
 }

@@ -6,7 +6,7 @@ public class SliderEvent : MonoBehaviour
 {
     public Vector2 ActionRange;
 
-    void Start()  
+    protected virtual void Start()  
     {
         SliderEventController.Instance.Subscribe(this);
     }
@@ -19,30 +19,30 @@ public class SliderEvent : MonoBehaviour
         }
     }
 
-    private bool CheckRange(float value)
+    protected bool CheckRange(float value)
     {
         return !(value < ActionRange.x || value > ActionRange.y);
     }
 
-    protected virtual void DoAction(float value)
+    protected virtual void DoActionInsideRange(float value)
     {
 
     }
 
-    protected virtual void DoReverseAction(float value)
+    protected virtual void DoActionOutsideRange(float value)
     {
 
     }
 
-    public void TryDoAction(float value)
+    public virtual void TryDoAction(float value)
     {
         if (CheckRange(value))
         {
-            DoAction(value);
+            DoActionInsideRange(value);
         }
         else
         {
-            DoReverseAction(value);
+            DoActionOutsideRange(value);
         }
     }
 }

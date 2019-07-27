@@ -10,7 +10,7 @@
 	{
         Tags {"Queue"="Transparent" "IgnoreProjector"="True" "RenderType"="Transparent"}
         
-        ZWrite Off
+        ZWrite On
         Lighting Off
         Fog { Mode Off }
 
