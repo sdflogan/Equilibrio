@@ -22,4 +22,18 @@ public class PlayerController : Singleton<PlayerController>
     {
         m_Agent.SetDestination(dest);
     }
+
+    public void Teleport(Vector3 position)
+    {
+        m_Agent.enabled = false;
+        transform.position = position;
+        Move(position);
+        StartCoroutine(EnableAfterTeleport(0.1f));
+    }
+
+    private IEnumerator EnableAfterTeleport(float seconds)
+    {
+        yield return new WaitForSeconds(seconds);
+        m_Agent.enabled = true;
+    }
 }
