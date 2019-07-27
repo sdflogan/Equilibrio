@@ -27,6 +27,11 @@ public class DualRenderCamera : Singleton<DualRenderCamera>
         mainGrading.saturation.value = saturation;
     }
 
+    public void ModifyMainSaturation(float modify, float minValue, float maxValue)
+    {
+        mainGrading.saturation.value = Mathf.Clamp(mainGrading.saturation.value + modify, minValue, maxValue);
+    }
+
     public float GetMainSaturation()
     {
         return mainGrading.saturation.value;
