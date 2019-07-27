@@ -9,7 +9,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2630210834661532383}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: WalkPosition
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -41,7 +41,7 @@ GameObject:
   - component: {fileID: 4614479620419684153}
   - component: {fileID: 7198723402879064857}
   - component: {fileID: 3849692497647426680}
-  m_Layer: 0
+  m_Layer: 8
   m_Name: Stair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -119,7 +119,8 @@ GameObject:
   m_Component:
   - component: {fileID: 8001912673910523394}
   - component: {fileID: 4187064423445401898}
-  m_Layer: 0
+  - component: {fileID: 1903072708705302172}
+  m_Layer: 8
   m_Name: Stair1
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -156,3 +157,16 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   TargetPositions:
   - {fileID: 2630210834661532383}
+--- !u!65 &1903072708705302172
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6437852746572166161}
+  m_Material: {fileID: 0}
+  m_IsTrigger: 0
+  m_Enabled: 1
+  serializedVersion: 2
+  m_Size: {x: 1, y: 1, z: 1}
+  m_Center: {x: 0, y: 0, z: 0}

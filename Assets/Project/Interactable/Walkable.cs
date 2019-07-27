@@ -10,6 +10,14 @@ public class Walkable : MonoBehaviour
 {
     public List<Transform> TargetPositions;
 
+    private void Awake()
+    {
+        if (TargetPositions.Count == 0)
+        {
+            TargetPositions.Add(transform);
+        }
+    }
+
     public Vector3 GetDestination(Vector3 position)
     {
         Transform nearest = null;
