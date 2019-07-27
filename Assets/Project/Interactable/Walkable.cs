@@ -8,20 +8,38 @@ using UnityEditor;
 
 public class Walkable : MonoBehaviour
 {
-    public Transform TargetPosition;
+    public List<Transform> TargetPositions;
 
-    public Vector3 GetDestination()
+    public Vector3 GetDestination(Vector3 position)
     {
-        return TargetPosition.position;
+        Transform nearest = null;
+        float closestDistance = 9999;
+        float tmpDist;
+
+        foreach(Transform t in TargetPositions)
+        {
+            tmpDist = Vector3.Distance(t.position, position);
+
+            if (nearest == null || tmpDist < closestDistance)
+            {
+                nearest = t;
+                closestDistance = tmpDist;
+            } 
+        }
+
+        return nearest.position;
     }
 
 #if UNITY_EDITOR
     private void OnDrawGizmos()
     {
-        if (TargetPosition != null)
+        if (TargetPositions != null)
         {
-            Gizmos.color = Color.red;
-            Gizmos.DrawSphere(TargetPosition.position, 0.1f);
+            foreach (Transform t in TargetPositions)
+            {
+                Gizmos.color = Color.red;
+                Gizmos.DrawSphere(t.position, 0.1f);
+            }
         }
     }
 #endif
