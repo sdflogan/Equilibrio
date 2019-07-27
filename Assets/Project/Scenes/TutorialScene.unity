@@ -722,6 +722,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6a1982a074261540b31d1d81d1d7856, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  LoadImage: {fileID: 0}
+  TransitionTime: 1
 --- !u!1 &889963774
 GameObject:
   m_ObjectHideFlags: 0
@@ -1192,11 +1194,11 @@ GameObject:
   - component: {fileID: 1117334946}
   m_Layer: 11
   m_Name: Second Camera
-  m_TagString: Untagged
+  m_TagString: SecondCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &1117334945
 Transform:
   m_ObjectHideFlags: 0
@@ -1425,7 +1427,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1248956084
 Transform:
   m_ObjectHideFlags: 0
@@ -3737,6 +3739,16 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 1012048829528747717, guid: 5cbaf9ba4ad7eb84391a2f349f65f075,
+        type: 3}
+      propertyPath: m_AngularSpeed
+      value: 300
+      objectReference: {fileID: 0}
+    - target: {fileID: 2040554239372205668, guid: 5cbaf9ba4ad7eb84391a2f349f65f075,
+        type: 3}
+      propertyPath: m_Controller
+      value: 
+      objectReference: {fileID: 9100000, guid: 9dc17cd275f15c5469b8043c5141f365, type: 2}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 5cbaf9ba4ad7eb84391a2f349f65f075, type: 3}
 --- !u!23 &6188440077831243169

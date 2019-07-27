@@ -2,9 +2,25 @@
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class SceneLoader : Singleton<SceneLoader>
 {
+    public Image LoadImage;
+    public float TransitionTime = 1f;
+
+    private void Start()
+    {
+        //LoadImage.DOFade(1f, TransitionTime).OnComplete(() => LoadScene(0)).Play();
+        LoadScene(0);
+    }
+
+    public void LoadSceneFade(int scene)
+    {
+        LoadImage.DOFade(1f, TransitionTime).OnComplete(() => LoadScene(scene)).Play();
+    }
+
     public void LoadScene(int scene)
     {
         StartCoroutine(LoadSceneBackground(scene));
@@ -19,11 +35,20 @@ public class SceneLoader : Singleton<SceneLoader>
             yield return null;
         }
 
-        load = SceneManager.UnloadSceneAsync(sceneIndex-1);
+        SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(sceneIndex));
 
-        while (!load.isDone)
+        DualRenderCamera.Instance.SetReferences();
+
+        if (sceneIndex - 1 >= 0)
         {
-            yield return null;
+            load = SceneManager.UnloadSceneAsync(sceneIndex - 1);
+
+            while (!load.isDone)
+            {
+                yield return null;
+            }
         }
+
+        LoadImage.DOFade(0f, TransitionTime).Play();
     }
 }

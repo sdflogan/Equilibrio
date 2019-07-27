@@ -10,7 +10,7 @@ public class EndLevel : MonoBehaviour
     {
         if (other.tag == "Player")
         {
-            SceneLoader.Instance.LoadScene(nextLevel);
+            SceneLoader.Instance.LoadSceneFade(nextLevel);
         }
     }
 }

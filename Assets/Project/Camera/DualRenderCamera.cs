@@ -13,8 +13,12 @@ public class DualRenderCamera : Singleton<DualRenderCamera>
 
     ColorGrading mainGrading;
 
-    private void Awake()
+    public void SetReferences()
     {
+        MainCamera = Camera.main;
+        SecondCamera = GameObject.FindGameObjectWithTag("SecondCamera").GetComponent<Camera>();
+
+        SecondCamera.gameObject.SetActive(false);
         SecondCamera.gameObject.SetActive(true);
         mainVolume = MainCamera.GetComponent<PostProcessVolume>();
         secondVolume = SecondCamera.GetComponent<PostProcessVolume>();
@@ -34,6 +38,13 @@ public class DualRenderCamera : Singleton<DualRenderCamera>
 
     public float GetMainSaturation()
     {
-        return mainGrading.saturation.value;
+        float value = 0;
+
+        if (mainGrading != null)
+        {
+            value = mainGrading.saturation.value;
+        }
+
+        return value;
     }
 }

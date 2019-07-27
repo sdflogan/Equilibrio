@@ -6,7 +6,6 @@ public class SafeArea : MonoBehaviour
 {
     private void OnTriggerEnter(Collider other)
     {
-        Debug.Log("hello there");
         if (other.tag == "Player")
         {
             SliderEventController.Instance.Enabled = false;
@@ -15,7 +14,6 @@ public class SafeArea : MonoBehaviour
 
     private void OnTriggerExit(Collider other)
     {
-        Debug.Log("hello ");
         SliderEventController.Instance.Enabled = true;
     }
 }

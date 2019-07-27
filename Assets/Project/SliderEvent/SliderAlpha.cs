@@ -14,6 +14,7 @@ public class SliderAlpha : SliderEvent
     private void Awake()
     {
         m_Materials = TargetMeshRenderer.sharedMaterials;
+        Fade(0);
     }
 
     protected override void DoActionInsideRange(float value)
@@ -50,7 +51,31 @@ public class SliderAlpha : SliderEvent
     {
         for (int i=0; i<m_Materials.Length; i++)
         {
-            m_Materials[i].DOFade(value, FadeTime).Play();
+            if (value == 1)
+            {
+                m_Materials[i].DOFade(value, FadeTime).SetDelay(0.05f).OnStart(() =>
+                {
+                    if (!TargetMeshRenderer.enabled)
+                    {
+                        TargetMeshRenderer.enabled = true;
+                    }
+                }).Play();
+            }
+            else if (value == 0)
+            {
+                m_Materials[i].DOFade(value, FadeTime).OnComplete(() => 
+                {
+                    if (TargetMeshRenderer.enabled)
+                    {
+                        TargetMeshRenderer.enabled = false;
+                    }
+                }).Play();
+            }
+            else
+            {
+                TargetMeshRenderer.enabled = true;
+                m_Materials[i].DOFade(value, FadeTime).Play();
+            }
         }
     }
 }

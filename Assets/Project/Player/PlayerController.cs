@@ -7,10 +7,17 @@ public class PlayerController : Singleton<PlayerController>
 {
     private NavMeshAgent m_Agent;
     private Walkable m_WalkableTarget;
+    private Animator m_Anim;
 
     private void Awake()
     {
         m_Agent = GetComponentInChildren<NavMeshAgent>();
+        m_Anim = GetComponentInChildren<Animator>();
+    }
+
+    private void Update()
+    {
+        m_Anim.SetFloat("Speed", m_Agent.velocity.magnitude);
     }
 
     public void Move(Walkable dest, Vector3 hitPoint)
