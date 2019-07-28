@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<objects serializationModel="Studio.01.10.00">
+    <object class="AudioFile" id="{d7f7a877-ba2f-4aad-a1b4-3c8b7cdc6a81}">
+        <property name="assetPath">
+            <value>Fase1Post.wav</value>
+        </property>
+        <property name="isStreaming">
+            <value>true</value>
+        </property>
+        <property name="frequencyInKHz">
+            <value>44.0999985</value>
+        </property>
+        <property name="channelCount">
+            <value>2</value>
+        </property>
+        <property name="length">
+            <value>12.000022675736961</value>
+        </property>
+        <relationship name="masterAssetFolder">
+            <destination>{702dd171-47cb-44f8-9ff9-8a72557a7818}</destination>
+        </relationship>
+    </object>
+</objects>
