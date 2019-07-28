@@ -57,9 +57,6 @@ MonoBehaviour:
   - Platform: 2
     Value: 32
   Plugins: []
-  MasterBanks:
-  - Master Bank
-  Banks:
-  - Music
-  - SFX
+  MasterBanks: []
+  Banks: []
   LiveUpdatePort: 9264

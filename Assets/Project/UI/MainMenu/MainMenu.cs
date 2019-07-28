@@ -9,10 +9,9 @@ public class MainMenu : MonoBehaviour
     [SerializeField] private List<CanvasGroup> endImage;
     [SerializeField] private CanvasGroup arrowR;
     [SerializeField] private CanvasGroup arrowL;
-
-
-
+    
     private int countPage = 0;
+    private bool clickStade = false;
 
     public void ClickButton(int count)
     {
@@ -27,43 +26,55 @@ public class MainMenu : MonoBehaviour
 
     public void ClickRigth()
     {
-        countPage++;
-
-        Sequence clickRigth = DOTween.Sequence();
-        clickRigth.AppendCallback(() => panelLevel[countPage].gameObject.SetActive(true))
-            .Append(panelLevel[countPage].DOFade(1, 0.25f));
-
-        clickRigth.Play();
-
-        if (countPage == panelLevel.Count-1)
+        if (!clickStade)
         {
-            ArrowR();
-        }
+            clickStade = true;
 
-        else if (countPage == 1)
-        {
-            ArrowL();
+            countPage++;
+
+            Sequence clickRigth = DOTween.Sequence();
+            clickRigth.AppendCallback(() => panelLevel[countPage].gameObject.SetActive(true))
+                .Append(panelLevel[countPage].DOFade(1, 0.25f))
+                .AppendCallback(() => clickStade = false);
+
+            clickRigth.Play();
+
+            if (countPage == panelLevel.Count - 1)
+            {
+                ArrowR();
+            }
+
+            else if (countPage == 1)
+            {
+                ArrowL();
+            }
         }
     }
 
     public void ClickLeft()
     {
-        countPage--;
-
-        Sequence clickLeft = DOTween.Sequence();
-        clickLeft.Append(panelLevel[countPage+1].DOFade(0, 0.25f))
-            .AppendCallback(() => panelLevel[countPage+1].gameObject.SetActive(false));
-
-        clickLeft.Play();
-
-        if (countPage == panelLevel.Count - 2)
+        if (!clickStade)
         {
-            ArrowR();
-        }
+            clickStade = true;
 
-        else if (countPage == 0)
-        {
-            ArrowL();
+            countPage--;
+
+            Sequence clickLeft = DOTween.Sequence();
+            clickLeft.Append(panelLevel[countPage + 1].DOFade(0, 0.25f))
+                .AppendCallback(() => panelLevel[countPage + 1].gameObject.SetActive(false))
+                .AppendCallback(() => clickStade = false);
+
+            clickLeft.Play();
+
+            if (countPage == panelLevel.Count - 2)
+            {
+                ArrowR();
+            }
+
+            else if (countPage == 0)
+            {
+                ArrowL();
+            }
         }
     }
 
