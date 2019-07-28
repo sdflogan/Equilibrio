@@ -23,7 +23,13 @@ public class MoveObjectBehaviour : MonoBehaviour
     }
     private void Update()
     {
-        
+
+        if (!SliderEventController.Instance.Enabled)
+        {
+            animator.SetFloat("Speed", 0);
+            return;
+        }
+
         if (timeDelayed < 0)
         {
             timeDelayed = 0;
