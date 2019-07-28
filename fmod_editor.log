@@ -7,7 +7,7 @@
 [LOG] OutputWASAPI::init                       : Output buffer size: 4096 samples, latency: 0.00ms, period: 10.00ms, DSP buffer: 1024 * 4
 [LOG] Thread::initThread                       : Init FMOD stream thread. Priority: 2, Stack Size: 65536, Semaphore: No, Sleep Time: 10, Looping: Yes.
 [LOG] Thread::initThread                       : Init FMOD mixer thread. Priority: 3, Stack Size: 49152, Semaphore: No, Sleep Time: 0, Looping: Yes.
-[LOG] AsyncManager::init                       : manager 000001CBC0DBBF08 isAsync 0 updatePeriod 0.02
+[LOG] AsyncManager::init                       : manager 000001CBC0DB8AC8 isAsync 0 updatePeriod 0.02
 [LOG] AsyncManager::init                       : done
 [LOG] PlaybackSystem::init                     : 
 [LOG] Thread::initThread                       : Init FMOD Studio sample load thread. Priority: 0, Stack Size: 65536, Semaphore: No, Sleep Time: 1, Looping: No.
@@ -22,14 +22,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3348416
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20928
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E41FF2CC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E38FF5BC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC3AE40EE0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC3AE40EB0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC3AE40FB0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC3AE41070
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBEF798DF8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBF2F77A98
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fx3', format=2, channels=2, frequency=48000, lengthbytes=57280, lengthpcm=195201, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.124756.
@@ -38,14 +38,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3348416
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20928
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E41FF2CC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E38FF5BC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC3AE40EE0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC3AE40EB0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC3AE40FB0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC3AE41070
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBEF798DF8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBF2F77A98
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fx1', format=2, channels=2, frequency=48000, lengthbytes=71168, lengthpcm=238852, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.119049.
@@ -54,14 +54,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3348416
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20928
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E41FF2CC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E38FF5BC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC3AE40EE0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC3AE40EB0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC3AE40FB0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC3AE41070
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBEF798DF8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBF2F77A98
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='fx2', format=2, channels=2, frequency=48000, lengthbytes=63232, lengthpcm=216320, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.111298.
@@ -70,14 +70,14 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3348416
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20928
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E41FF2CC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E38FF5BC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC3AE40EE0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC3AE40EB0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC3AE40FB0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC3AE41070
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBEF798DF8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBF2F77A98
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='Fase2Post', format=2, channels=2, frequency=48000, lengthbytes=83616, lengthpcm=352001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.973022.
@@ -86,366 +86,55 @@
 [LOG] SystemI::createSoundInternal             : exinfo->length             = 3348416
 [LOG] SystemI::createSoundInternal             : exinfo->fileoffset         = 20928
 [LOG] SystemI::createSoundInternal             : exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E41FF2CC
+[LOG] SystemI::createSoundInternal             : exinfo->inclusionlist      = 00000095E38FF5BC
 [LOG] SystemI::createSoundInternal             : exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             : exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             : exinfo->useropen           = 00007FFC3AE40EE0
 [LOG] SystemI::createSoundInternal             : exinfo->userclose          = 00007FFC3AE40EB0
 [LOG] SystemI::createSoundInternal             : exinfo->userread           = 00007FFC3AE40FB0
 [LOG] SystemI::createSoundInternal             : exinfo->userseek           = 00007FFC3AE41070
-[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBEF798DF8
+[LOG] SystemI::createSoundInternal             : exinfo->fileuserdata       = 000001CBF2F77A98
 [LOG] SystemI::createSoundInternal             : exinfo->initialseekpostype = 1
 [LOG] SystemI::DSPCodecPoolRegister            : register codec pool for pool type 5
 [LOG] SystemI::createSoundInternal             : Sample 0/1: name='platos', format=2, channels=2, frequency=48000, lengthbytes=54880, lengthpcm=199681, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.458801.
 [LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
 [LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
 [LOG] Thread::initThread                       : Init FMOD nonblocking thread (0). Priority: 1, Stack Size: 81920, Semaphore: Yes, Sleep Time: 0, Looping: Yes.
-[LOG] SystemI::createSound                     : setdata soundi = 000001CBE71909D8 : node = 000001CBA0CD4EE0
-[LOG] SystemI::createSound                     : add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBE71909D8
+[LOG] SystemI::createSound                     : setdata soundi = 000001CBD13629F8 : node = 000001CBC9BF04A0
+[LOG] SystemI::createSound                     : add node to async list : head = 000001CBC9881FE8.  list count = 0
+[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD13629F8
 [LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
 [LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
 [LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
 [LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
 [LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBA0CD4FF8
+[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9BF05B8
 [LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
 [LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
 [LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
 [LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Menu', format=2, channels=2, frequency=48000, lengthbytes=441888, lengthpcm=1728001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.702606.
 [LOG] Thread::initThread                       :     Init FMOD file thread. Priority: 1, Stack Size: 16384, Semaphore: No, Sleep Time: 10, Looping: Yes.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBE71909D8
-[LOG] SoundI::getSubSound                      : sound 000001CBE71909D8.  Subsound index 0 / 1
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001CBE718F238 : node = 000001CBC9AB6540
-[LOG] SystemI::createSound                     : add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBE718F238
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBE718F3E8 : node = 000001CBC9AB67E0
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSound                     :     filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9AB6658
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBD13630B8 : node = 000001CBC9AB6A80
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1Pre', format=2, channels=2, frequency=48000, lengthbytes=250816, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945740.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBE718F238
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBE718F3E8
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9AB68F8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreBarra', format=2, channels=2, frequency=48000, lengthbytes=240768, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.518524.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBE718F3E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD13630B8
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9AB6B98
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreOk', format=2, channels=2, frequency=48000, lengthbytes=214208, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290314.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD13630B8
-[LOG] SoundI::getSubSound                      : sound 000001CBE718F238.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBE718F3E8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBD13630B8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Menu (000001CBE71909D8)
-[LOG] SoundI::release                          :     Menu (000001CBEB56EDB8)
-[LOG] SoundI::release                          :     Menu (000001CBE7190D38)
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001CBD1363268 : node = 000001CBC101DF30
-[LOG] SystemI::createSound                     : add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD1363268
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBD1361C78 : node = 000001CBC101E1D0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC101E048
-[LOG] SystemI::createSound                     :     filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBD1362F08 : node = 000001CBC101DC90
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1Pre', format=2, channels=2, frequency=48000, lengthbytes=250816, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945740.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD1363268
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD1361C78
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC101E2E8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreBarra', format=2, channels=2, frequency=48000, lengthbytes=240768, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.518524.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD1361C78
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD1362F08
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC101DDA8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreOk', format=2, channels=2, frequency=48000, lengthbytes=214208, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290314.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD1362F08
-[LOG] SoundI::getSubSound                      : sound 000001CBD1363268.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBD1361C78.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBD1362F08.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Fase1PreOk (000001CBD13630B8)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBEB56DBD8)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBD13629F8)
-[LOG] SoundI::release                          : Fase1PreBarra (000001CBE718F3E8)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBEB56EC18)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBD1361E28)
-[LOG] SoundI::release                          : Fase1Pre (000001CBE718F238)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBEB56F0F8)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBD13624E8)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD1362D58
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD1362D58
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD1362BA8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD1362BA8
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001CBD13629F8 : node = 000001CBC9AB6540
-[LOG] SystemI::createSound                     : add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD13629F8
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBD13624E8 : node = 000001CBC9AB67E0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9AB6658
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBD13630B8 : node = 000001CBC9BF11C0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1Pre', format=2, channels=2, frequency=48000, lengthbytes=250816, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945740.
 [LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD13629F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD13624E8
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9AB68F8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreBarra', format=2, channels=2, frequency=48000, lengthbytes=240768, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.518524.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD13624E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD13630B8
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9BF12D8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreOk', format=2, channels=2, frequency=48000, lengthbytes=214208, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290314.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD13630B8
 [LOG] SoundI::getSubSound                      : sound 000001CBD13629F8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBD13624E8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBD13630B8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Fase1PreOk (000001CBD1362F08)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBEB570AF8)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBD1362D58)
-[LOG] SoundI::release                          : Fase1PreBarra (000001CBD1361C78)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBEB56E3F8)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBD1362BA8)
-[LOG] SoundI::release                          : Fase1Pre (000001CBD1363268)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBEB56E258)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBD1361FD8)
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001CBC9A97D28 : node = 000001CBC9AB6A80
-[LOG] SystemI::createSound                     : add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBC9A97D28
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9AB6B98
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBC9A98598 : node = 000001CBC9D00710
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBC9A98E08 : node = 000001CBC9D01430
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1Pre', format=2, channels=2, frequency=48000, lengthbytes=250816, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945740.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBC9A97D28
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBC9A98598
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9D00828
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreBarra', format=2, channels=2, frequency=48000, lengthbytes=240768, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.518524.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBC9A98598
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBC9A98E08
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9D01548
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreOk', format=2, channels=2, frequency=48000, lengthbytes=214208, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290314.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBC9A98E08
-[LOG] SoundI::getSubSound                      : sound 000001CBC9A97D28.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBC9A98598.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBC9A98E08.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Fase1PreOk (000001CBD13630B8)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBEB56EDB8)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBC9A979C8)
-[LOG] SoundI::release                          : Fase1PreBarra (000001CBD13624E8)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBEB56D898)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBD1361E28)
-[LOG] SoundI::release                          : Fase1Pre (000001CBD13629F8)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBEB56EC18)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBD13635C8)
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBC9A97ED8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBC9A97ED8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBC9A97ED8
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBC9A97ED8
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSound                     : FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSound                     : setdata soundi = 000001CBD13624E8 : node = 000001CBC9D00C50
-[LOG] SystemI::createSound                     : add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD13624E8
-[LOG] SystemI::createSound                     : filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBD13629F8 : node = 000001CBA0CD4EE0
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 0
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBC9D00D68
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSound                     :     filename = E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank : mode 02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSound                     :     FMOD_NONBLOCKING specified.  Putting into queue to be opened asynchronously!
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSound                     :     setdata soundi = 000001CBD1362BA8 : node = 000001CBA0CD49A0
-[LOG] SystemI::createSound                     :     add node to async list : head = 000001CBEB56FA68.  list count = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1Pre', format=2, channels=2, frequency=48000, lengthbytes=250816, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.945740.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD13624E8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD13629F8
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBA0CD4FF8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreBarra', format=2, channels=2, frequency=48000, lengthbytes=240768, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.518524.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD13629F8
-[LOG] AsyncThread::threadFunc                  : Starting Asynchronous operation on sound 000001CBD1362BA8
-[LOG] SystemI::createSoundInternal             :     Create name='E:\ProyectosUnity\MalagaJam\Equilibrio\Assets\Package Ramnusia\Build\Desktop\Music.bank', mode=0x02010082
-[LOG] SystemI::createSoundInternal             :     exinfo->cbsize             = 232
-[LOG] SystemI::createSoundInternal             :     exinfo->length             = 3348416
-[LOG] SystemI::createSoundInternal             :     exinfo->fileoffset         = 20928
-[LOG] SystemI::createSoundInternal             :     exinfo->numsubsounds       = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlist      = 000001CBA0CD4AB8
-[LOG] SystemI::createSoundInternal             :     exinfo->inclusionlistnum   = 1
-[LOG] SystemI::createSoundInternal             :     exinfo->suggestedsoundtype = 5
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekposition = 2000
-[LOG] SystemI::createSoundInternal             :     exinfo->initialseekpostype = 1
-[LOG] SystemI::createSoundInternal             :     Stream 0/1: name='Fase1PreOk', format=2, channels=2, frequency=48000, lengthbytes=214208, lengthpcm=960001, pcmblocksize=0, loopstart=0, loopend=0, mode=0x00000000, channelmask=0x00000000, channelorder=0, peakvolume=0.290314.
-[LOG] AsyncThread::threadFunc                  : Finished Asynchronous operation on sound 000001CBD1362BA8
-[LOG] SoundI::getSubSound                      : sound 000001CBD13624E8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBD13629F8.  Subsound index 0 / 1
-[LOG] SoundI::getSubSound                      : sound 000001CBD1362BA8.  Subsound index 0 / 1
-[LOG] SoundI::release                          : Fase1PreOk (000001CBC9A98E08)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBEB570E38)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBC9A98FB8)
-[LOG] SoundI::release                          : Fase1PreBarra (000001CBC9A98598)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBEB56EF58)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBC9A98088)
-[LOG] SoundI::release                          : Fase1Pre (000001CBC9A97D28)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBEB5707B8)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBC9A97ED8)
-[LOG] SoundI::release                          :  (000001CBD0676F08)
-[LOG] SoundI::release                          :     Fase2Post (000001CBEB570958)
-[LOG] SoundI::release                          :  (000001CBD06771E8)
-[LOG] SoundI::release                          :     platos (000001CBEB571178)
-[LOG] SoundI::release                          :  (000001CBD0676948)
-[LOG] SoundI::release                          :     fx2 (000001CBEB570618)
-[LOG] SoundI::release                          :  (000001CBD06777A8)
-[LOG] SoundI::release                          :     fx3 (000001CBEB5702D8)
-[LOG] SoundI::release                          :  (000001CBD06767D8)
-[LOG] SoundI::release                          :     fx1 (000001CBEB56DF18)
-[LOG] SoundI::release                          : Fase1PreOk (000001CBD1362BA8)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBEB571318)
-[LOG] SoundI::release                          :     Fase1PreOk (000001CBD1361C78)
-[LOG] SoundI::release                          : Fase1PreBarra (000001CBD13629F8)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBEB56EDB8)
-[LOG] SoundI::release                          :     Fase1PreBarra (000001CBD1363268)
-[LOG] SoundI::release                          : Fase1Pre (000001CBD13624E8)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBEB570AF8)
-[LOG] SoundI::release                          :     Fase1Pre (000001CBD1362D58)
+[LOG] SoundI::release                          :  (000001CBA104E138)
+[LOG] SoundI::release                          :     Fase2Post (000001CBC98821D8)
+[LOG] SoundI::release                          :  (000001CBA104E2A8)
+[LOG] SoundI::release                          :     platos (000001CBC9880FF8)
+[LOG] SoundI::release                          :  (000001CB9FB98558)
+[LOG] SoundI::release                          :     fx2 (000001CBC9881CF8)
+[LOG] SoundI::release                          :  (000001CB9FB98278)
+[LOG] SoundI::release                          :     fx3 (000001CBC9881B58)
+[LOG] SoundI::release                          :  (000001CB9FB98C88)
+[LOG] SoundI::release                          :     fx1 (000001CBC9880638)
+[LOG] SoundI::release                          : Menu (000001CBD13629F8)
+[LOG] SoundI::release                          :     Menu (000001CBC9882038)
+[LOG] SoundI::release                          :     Menu (000001CBD1361C78)
+[LOG] Thread::callback                         : FMOD Studio bank load thread finished.
+[LOG] Thread::callback                         : FMOD Studio sample load thread finished.
+[LOG] LiveUpdate::release                      : 
+[LOG] LiveUpdate::reset                        : Reset connection (reason Disconnected)
+[LOG] Thread::callback                         : FMOD stream thread finished.
+[LOG] Thread::callback                         : FMOD mixer thread finished.
+[LOG] Thread::callback                         : FMOD nonblocking thread (0) finished.
+[LOG] Thread::callback                         : FMOD file thread finished.
+[LOG] SystemI::close                           : Closed.

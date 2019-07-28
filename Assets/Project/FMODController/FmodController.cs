@@ -15,4 +15,10 @@ public class FmodController : Singleton<FmodController>
         //parameter.setValue(0.33f);
         Music.start();
     }
+
+    public void SpacePressed(float value)
+    {
+        Music.getParameter("bar", out parameter);
+        parameter.setValue(value);
+    }
 }

@@ -16,9 +16,11 @@ public class MainMenu : MonoBehaviour
 
     public void ClickButton(int count)
     {
+        Debug.Log("click");
         Sequence clickButton = DOTween.Sequence();
         clickButton.AppendCallback(() => endImage[count].gameObject.SetActive(true))
-            .Append(endImage[count].DOFade(1, 0.25f));
+            .Append(endImage[count].DOFade(1, 0.25f))
+            .AppendCallback(() => SceneLoader.Instance.LoadSceneFade(count));
 
         clickButton.Play();
     }

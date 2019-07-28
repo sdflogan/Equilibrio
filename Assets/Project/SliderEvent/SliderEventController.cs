@@ -51,6 +51,9 @@ public class SliderEventController : Singleton<SliderEventController>
         {
             evt.TryDoAction(Value);
         }
+
+        // Actualizamos fmod
+        FmodController.Instance.SpacePressed(Value);
     }
 
     IEnumerator UpdateSlider(float seconds)

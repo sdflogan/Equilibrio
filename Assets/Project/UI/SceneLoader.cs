@@ -9,12 +9,12 @@ public class SceneLoader : Singleton<SceneLoader>
 {
     public Image LoadImage;
     public float TransitionTime = 1f;
-    public bool Debug = false;
+    public bool DebugFlag = false;
     public int StartLoadScene = -1;
 
     private void Start()
     {
-        if (Debug)
+        if (DebugFlag)
         {
             DualRenderCamera.Instance.SetReferences();
             LoadImage.DOFade(0f, TransitionTime).Play();
@@ -23,11 +23,13 @@ public class SceneLoader : Singleton<SceneLoader>
         if (StartLoadScene != -1)
         {
             SceneManager.LoadScene(StartLoadScene, LoadSceneMode.Additive);
+            LoadImage.DOFade(0f, TransitionTime).Play();
         }
     }
 
     public void LoadSceneFade(int scene)
     {
+        Debug.Log("Cargando");
         LoadImage.DOFade(1f, TransitionTime).OnComplete(() => LoadScene(scene)).Play();
     }
 
