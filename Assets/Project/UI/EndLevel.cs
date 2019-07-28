@@ -5,6 +5,7 @@ using UnityEngine;
 public class EndLevel : MonoBehaviour
 {
     public int nextLevel;
+    public bool endGame = false;
 
     private void OnTriggerEnter(Collider other)
     {
@@ -12,6 +13,15 @@ public class EndLevel : MonoBehaviour
         {
             Debug.Log("CargandoNivel");
             SceneLoader.Instance.LoadSceneFade(nextLevel);
+
+            if (endGame)
+            {
+                FmodController.Instance.EndGame(1);
+            }
+            else
+            {
+                FmodController.Instance.NextLevel();
+            }
         }
     }
 }

@@ -11,6 +11,11 @@ public class SliderEvent : MonoBehaviour
         SliderEventController.Instance.Subscribe(this);
     }
 
+    private void OnDisable()
+    {
+        SliderEventController.Instance.Unsubscribe(this);
+    }
+
     void OnDestroy()
     {
         if (SliderEventController.Instance != null)

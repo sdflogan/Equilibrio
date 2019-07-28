@@ -7,6 +7,7 @@ public class FmodController : Singleton<FmodController>
     public string musicEvt = "event:/Music";           // string reference to the FMOD-authored Event named "Loop"; name will appear in the Unity Inspector
     FMOD.Studio.EventInstance Music;             // Unity EventInstance name for Loop event that was created in FMOD
     FMOD.Studio.ParameterInstance parameter;
+    private bool endGame = false;
 
     private void Awake()
     {
@@ -36,16 +37,29 @@ public class FmodController : Singleton<FmodController>
         StartCoroutine(ResetValues(1f, "completed", 0));
     }
 
+    public void EndGame(float value)
+    {
+        Success(0);
+        Music.getParameter("menu", out parameter);
+        parameter.setValue(1);
+        endGame = true;
+    }
+
     public void NextLevel()
     {
-        //Success(0);
+        Success(0);
         Music.getParameter("Next_Level", out parameter);
-        //parameter.setValue(1);
-        //StartCoroutine(ResetValues(1f, "Next_Level", 0f));
+        parameter.setValue(1);
+        StartCoroutine(ResetValues(2f, "Next_Level", 0f));
     }
 
     public void LoadScene(int scene)
     {
+        if (endGame && scene != 1)
+        {
+            EndGame(0);
+        }
+
         float value = 0f;
         if (scene == 2)
         {
@@ -68,7 +82,8 @@ public class FmodController : Singleton<FmodController>
     {
         yield return new WaitForSeconds(seconds);
 
-        Music.getParameter(parameterName, out parameter);
-        parameter.setValue(reset);
+        FMOD.Studio.ParameterInstance p;
+        Music.getParameter(parameterName, out p);
+        p.setValue(reset);
     }
 }

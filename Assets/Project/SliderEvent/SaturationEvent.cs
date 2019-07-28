@@ -13,7 +13,9 @@ public class SaturationEvent : SliderEvent
     {
         base.DoActionInsideRange(value);
         float normalizedSaturation = (200 * value) - 100;
+        Debug.Log(value);
         DualRenderCamera.Instance.SetMainSaturation(normalizedSaturation);
+        //Debug.Log("Cambiando saturación");
     }
 
     protected override void DoActionOutsideRange(float value)
@@ -21,6 +23,7 @@ public class SaturationEvent : SliderEvent
         base.DoActionOutsideRange(value);
         float normalizedSaturation = (200 * value) - 100;
         DualRenderCamera.Instance.SetMainSaturation(normalizedSaturation);
+        //Debug.Log("Cambiando saturación");
     }
 
     public override void TryDoAction(float value)

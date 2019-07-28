@@ -24,10 +24,15 @@ public class DualRenderCamera : Singleton<DualRenderCamera>
         secondVolume = SecondCamera.GetComponent<PostProcessVolume>();
 
         mainVolume.profile.TryGetSettings(out mainGrading);
+        Debug.Log("Referencias");
     }
 
     public void SetMainSaturation(float saturation)
     {
+        if (MainCamera == null)
+        {
+            SetReferences();
+        }
         mainGrading.saturation.value = saturation;
     }
 

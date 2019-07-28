@@ -11,6 +11,7 @@ public class SceneLoader : Singleton<SceneLoader>
     public float TransitionTime = 1f;
     public bool DebugFlag = false;
     public int StartLoadScene = -1;
+    public int current = -1;
 
     private void Start()
     {
@@ -36,6 +37,7 @@ public class SceneLoader : Singleton<SceneLoader>
 
     public void LoadScene(int scene)
     {
+        current = scene;
         StartCoroutine(LoadSceneBackground(scene));
     }
 
@@ -51,8 +53,9 @@ public class SceneLoader : Singleton<SceneLoader>
         SceneManager.SetActiveScene(SceneManager.GetSceneByBuildIndex(sceneIndex));
 
         DualRenderCamera.Instance.SetReferences();
-
-        if (sceneIndex - 1 >= 0)
+        float toLoad = (current != -1 ? current : sceneIndex - 1);
+            
+        if (toLoad >= 0)
         {
             load = SceneManager.UnloadSceneAsync(sceneIndex - 1);
 
