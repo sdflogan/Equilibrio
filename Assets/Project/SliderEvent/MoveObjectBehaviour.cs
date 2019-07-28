@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class MoveObjectBehaviour : MonoBehaviour
 {
+    public bool StopTime = false;
 
     private Animator animator;
 
@@ -34,7 +35,7 @@ public class MoveObjectBehaviour : MonoBehaviour
             flag = true;
             animator.SetFloat("Speed", 1);
         }
-        else if (Input.GetKeyUp(KeyCode.Space))
+        else if (Input.GetKeyUp(KeyCode.Space) && !StopTime)
         {
             flag = false;
             animator.SetFloat("Speed", -1);

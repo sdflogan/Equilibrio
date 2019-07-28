@@ -804,7 +804,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadImage: {fileID: 0}
   TransitionTime: 1
-  DoStart: 0
+  Debug: 1
+  StartLoadScene: -1
 --- !u!1 &889963774
 GameObject:
   m_ObjectHideFlags: 0
