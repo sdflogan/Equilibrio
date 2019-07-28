@@ -39,10 +39,12 @@ public class SliderEvent : MonoBehaviour
         if (CheckRange(value))
         {
             DoActionInsideRange(value);
+            FmodController.Instance.PuzzleValue(1);
         }
         else
         {
             DoActionOutsideRange(value);
+            FmodController.Instance.PuzzleValue(0);
         }
     }
 }

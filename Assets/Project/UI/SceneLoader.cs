@@ -31,6 +31,7 @@ public class SceneLoader : Singleton<SceneLoader>
     {
         Debug.Log("Cargando");
         LoadImage.DOFade(1f, TransitionTime).OnComplete(() => LoadScene(scene)).Play();
+        FmodController.Instance.LoadScene(scene);
     }
 
     public void LoadScene(int scene)
