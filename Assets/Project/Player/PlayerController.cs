@@ -28,7 +28,8 @@ public class PlayerController : Singleton<PlayerController>
 
     public void Move(Vector3 pos)
     {
-        m_Agent.SetDestination(pos);
+        if (m_Agent.enabled)
+            m_Agent.SetDestination(pos);
     }
 
     public Vector3 GetDestination()
@@ -41,17 +42,18 @@ public class PlayerController : Singleton<PlayerController>
         return m_WalkableTarget;
     }
 
-    public void Teleport(Vector3 position)
+    public void Teleport(Vector3 position, Vector3 walkAfter)
     {
         m_Agent.enabled = false;
         transform.position = position;
         Move(position);
-        StartCoroutine(EnableAfterTeleport(0.1f));
+        StartCoroutine(EnableAfterTeleport(0.1f, walkAfter));
     }
 
-    private IEnumerator EnableAfterTeleport(float seconds)
+    private IEnumerator EnableAfterTeleport(float seconds, Vector3 walkAfter)
     {
         yield return new WaitForSeconds(seconds);
         m_Agent.enabled = true;
+        Move(walkAfter);
     }
 }

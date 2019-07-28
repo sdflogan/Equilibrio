@@ -9,18 +9,20 @@ public class SceneLoader : Singleton<SceneLoader>
 {
     public Image LoadImage;
     public float TransitionTime = 1f;
-    public bool DoStart = true;
+    public bool Debug = false;
+    public int StartLoadScene = -1;
 
     private void Start()
     {
-        if (DoStart)
-        {
-            LoadScene(0);
-        }
-        else
+        if (Debug)
         {
             DualRenderCamera.Instance.SetReferences();
             LoadImage.DOFade(0f, TransitionTime).Play();
+        }
+
+        if (StartLoadScene != -1)
+        {
+            SceneManager.LoadScene(StartLoadScene, LoadSceneMode.Additive);
         }
     }
 
