@@ -2,16 +2,15 @@
 using System.Collections.Generic;
 using UnityEngine;
 
-public class EndLevel : MonoBehaviour
+public class EnableTeleport : MonoBehaviour
 {
-    public int nextLevel;
+    public bool Activate = true;
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.tag == "Player")
         {
-            Debug.Log("CargandoNivel");
-            SceneLoader.Instance.LoadSceneFade(nextLevel);
+            Teleport.CanTeleport = Activate;
         }
     }
 }
