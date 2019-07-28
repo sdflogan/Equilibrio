@@ -1,6 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using FMODUnity;
 
 public class TouchController : MonoBehaviour
 {
@@ -24,6 +25,7 @@ public class TouchController : MonoBehaviour
                 if (target != null)
                 {
                     PlayerController.Instance.Move(target, hit.point);
+                    RuntimeManager.PlayOneShot("event:/Click");
                 }
             }
         }
