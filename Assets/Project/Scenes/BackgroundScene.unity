@@ -470,6 +470,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadImage: {fileID: 384268184}
   TransitionTime: 2
+  Debug: 0
 --- !u!1 &1544534199
 GameObject:
   m_ObjectHideFlags: 0
