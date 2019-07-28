@@ -774,7 +774,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LoadImage: {fileID: 0}
   TransitionTime: 1
-  Debug: 1
+  DebugFlag: 0
   StartLoadScene: -1
 --- !u!1 &720874434
 GameObject:
@@ -2425,7 +2425,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 55ac823c5832e7943b2b0cfc9efc3c60, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  nextLevel: 1
+  nextLevel: 3
 --- !u!65 &1752643498
 BoxCollider:
   m_ObjectHideFlags: 0
